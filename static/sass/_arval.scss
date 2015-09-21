@@ -17,7 +17,7 @@ $bg-color: #c5d87a; //Selected Content BG Color, ie. calendar
 
 //Main BG Color Variables
 $main-bg: $main-color;
-$main-bg-60: $light-color;
+$main-bg-60: #5b9524;
 $main-bg-25: #cad100;
 
 //Secondary Color Variables
@@ -81,7 +81,7 @@ $base-font-color: $black;
 $lighter-base-font-color: $black-80;
 $very-light-text: $gray-1;
 
-$link-color: $dark-color;
+$link-color: $main-color;
 $link-color-d1: $dark-color;
 $link-hover: $light-color;
 $site-status-color: $bg-color;
