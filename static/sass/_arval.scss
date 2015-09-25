@@ -220,6 +220,12 @@ html {
     border-bottom: 3px solid $main-bg-60 !important;
 }
 
+.static-container.about {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 //-----------------
 // Header Styling
 //-----------------
