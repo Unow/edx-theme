@@ -185,7 +185,7 @@ $footer_margin: ($baseline/4) 0;
 //-----------------
 //  CSS BG Images
 //-----------------
-$homepage-bg-image: url('../themes/safran/images/sunrise.jpg');
+$homepage-bg-image: url('../themes/safran/images/bandeauhome.jpg');
 
 $login-banner-image: none;
 $register-banner-image: none;
@@ -196,9 +196,10 @@ $video-thumb-url: '../themes/safran/images/edx.png';
 //  Mixin Styles
 //-----------------
 @mixin login_register_h1_style {
+    background: transparent url("../themes/arval/images/inscription.jpg") 200px 0 no-repeat;
     clip: auto !important;
     height: 50px;
-    width: 550px;
+    width: 900px;
     top: 0;
 }
 
