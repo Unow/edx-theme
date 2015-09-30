@@ -1,0 +1,39 @@
+<%!
+from django.utils.translation import ugettext as _
+from django.core.urlresolvers import reverse
+%>
+<%namespace file='main.html' import="login_query"/>
+<%namespace name='static' file='static_content.html'/>
+
+
+<header>
+  <h3 class="sr">${_("Registration Help")}</h3>
+</header>
+
+% if has_extauth_info is UNDEFINED:
+
+<div class="cta cta-login">
+  <h3 class="title">${_("Already registered?")}</h3>
+  <p class="instructions">
+    <a class="cta-login-action" href="${reverse('signin_user')}${login_query()}">
+      ${_("Log in")}
+    </a>
+  </p>
+</div>
+
+% endif
+
+<div class="cta cta-welcome">
+  <h3>Bienvenue sur Arval Formation</h3>
+  <p>Arval Formation est une initiative d’Arval, société filiale du Groupe BNP Paribas, leader de la Location Longue Durée de véhicules (LLD). Le COOC Arval a pour objectif de former aux fondamentaux de la gestion de parc automobile en LLD toute personne débutant dans cette nouvelle mission.</p>
+</div>
+
+<div class="cta cta-nextsteps">
+  <h3>Étapes suivantes</h3>
+  <p>En rejoignant Arval Formation, vous recevrez un mail d’activation. Vous devrez cliquer sur le lien d’activation pour compléter l’inscription. Vous ne voyez pas le mail&nbsp;? Vérifiez votre dossier de spam et marquez les mails provenant de Arval Formation (envoyés par <a href="mailto:arval.formation@unow.fr">arval.formation@unow.fr</a>) comme n’étant pas du spam.</p>
+</div>
+
+<div class="cta cta-help">
+  <h3>Besoin d’aide&nbsp;?</h3>
+  <p>Besoin d’aide pour vous inscrire ou pour suivre une formation sur Arval Formation&nbsp;? Une fois inscrit, la plupart des réponses aux questions se trouvent dans les forums de discussions spécifiques au cours. Vous pouvez aussi nous écrire à l’adresse <a href="mailto:arval.formation@unow.fr">arval.formation@unow.fr</a>.</p>
+</div>
