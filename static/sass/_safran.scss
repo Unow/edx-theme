@@ -267,3 +267,31 @@ header.global {
     }
 }
 
+//-----------------
+// Course about page
+//-----------------
+.course-info {
+    .container .course-sidebar > section.course-summary {
+        border-top: 1px solid $border-color-2;
+
+        .social-sharing {
+            display: none;
+        }
+    }
+
+    .details nav a {
+        font-size: 1.5em;
+    }
+}
+
+.content-wrapper section.course-info header.course-profile .intro-inner-wrapper .table .intro .main-cta a.register {
+    text-indent: -9999px;
+    line-height: 0;
+}
+
+.content-wrapper section.course-info header.course-profile .intro-inner-wrapper .table .intro .main-cta a.register::after {
+    content: "S'inscrire";
+    text-indent: 0;
+    display: block;
+    line-height: initial;
+}
