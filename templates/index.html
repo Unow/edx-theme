@@ -17,6 +17,10 @@ from microsite_configuration import microsite
 
 %>
 
+<%block name="title">
+  <title>${settings.PLATFORM_NAME}</title>
+</%block>
+
 <section class="home">
   <header>
     <div class="outer-wrapper">
@@ -29,7 +33,7 @@ from microsite_configuration import microsite
               <h1>${_("Free courses from <strong>{university_name}</strong>").format(university_name="Stanford")}</h1>
               <h2>${_("For anyone, anywhere, anytime")}</h2>
             % else:
-              <h1>Bienvenue sur le MOOC Safran University</h1>
+              <h1>Bienvenue sur le MOOC Safran University&nbsp;!</h1>
             % endif
           % endif
         </hgroup>
