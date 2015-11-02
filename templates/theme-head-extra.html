@@ -2,4 +2,9 @@
 
 <%namespace name='static' file='/static_content.html'/>
 
-<link rel="stylesheet" href="${static.url('themes/arval/css/ie9.css')}" />
+<!--[if IE 9]>
+% for x in range(1, 6):
+  <% url = "themes/arval/css/ie9_main_" + str(x) + ".css" %>
+  <link rel="stylesheet" href="${static.url(url)}" />
+% endfor
+<![endif]-->
