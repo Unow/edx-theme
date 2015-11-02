@@ -29,7 +29,7 @@ $black-80: #585754;
 //  Font Assignment
 //-----------------
 
-$theme-sans-font: 'Source Sans';
+$theme-sans-font: 'Century Gothic', 'Source Sans';
 $sans-serif: $theme-sans-font, $sans-serif;
 $body-font-family: $sans-serif;
 
@@ -67,7 +67,7 @@ $very-light-text: $white;
 $link-color: $dark-green;
 $link-color-d1: $dark-green;
 $link-hover: $light-green;
-$site-status-color: $orange;
+$site-status-color: $dark-green;
 
 $header-graphic-super-color: $dark-green;
 $header-graphic-sub-color: $lighter-base-font-color;
@@ -75,7 +75,7 @@ $header-graphic-sub-color: $lighter-base-font-color;
 $header-link-color: $dark-green;
 $header-link-hover: $light-green;
 
-$button-color: $orange;
+$button-color: $dark-green;
 $button-archive-color: $gray-2;
 
 $shadow-color: $black;
@@ -83,7 +83,7 @@ $shadow-color: $black;
 // actions
 $button-bg-image: none;
 $button-bg-color: $gray-2;
-$button-bg-hover-color: $orange;
+$button-bg-hover-color: $light-green;
 
 // actions - primary
 $action-primary-bg: $dark-green;
@@ -91,11 +91,11 @@ $action-primary-fg: $gray-2;
 $action-primary-shadow: none;
 
 // focused - hover/active pseudo states
-$action-primary-focused-bg: $orange;
+$action-primary-focused-bg: $light-green;
 $action-primary-focused-fg: $white;
 
 // current or active navigation item
-$action-primary-active-bg: $orange;
+$action-primary-active-bg: $dark-green;
 $action-primary-active-fg: $white;
 $action-primary-active-shadow: none;
 $action-primary-active-focused-fg: $gray-2;
@@ -153,8 +153,8 @@ $course-header-bg: transparentize($white, .1);
 
 $sidebar-chapter-bg-top: transparentize($white, .3);
 $sidebar-chapter-bg-bottom: transparentize($white, .9);
-$sidebar-chapter-bg: $orange;
-$sidebar-active-image: $orange;
+$sidebar-chapter-bg: $light-green;
+$sidebar-active-image: $light-green;
 
 $form-bg-color: $white;
 $modal-bg-color: $white;
@@ -168,7 +168,7 @@ $footer_margin: ($baseline/4) 0;
 //-----------------
 //  CSS BG Images
 //-----------------
-$homepage-bg-image: url('../themes/unow/images/unow-logo.png');
+$homepage-bg-image: url('../themes/unow/images/bandeauhome.png');
 
 $login-banner-image: none;
 $register-banner-image: none;
@@ -196,4 +196,20 @@ $register-banner-image: none;
     .outer-wrapper {
         margin-top: 90px !important;
     }
+}
+
+.course-info header.course-profile .intro-inner-wrapper .intro .main-cta {
+  &>a.find-courses, a.register, a.add-to-cart {
+    background-image: none !important;
+  }
+}
+
+.course-index div#accordion {
+  .chapter {
+    background-image: none !important;
+    h3.ui-accordion-header a {color: $white !important;}
+    h3.ui-accordion-header:hover a{color: $dark-green !important;}
+  }
+  .chapter.is-open h3.ui-accordion-header a{color: $black !important;}
+  ul.ui-accordion-content li.active>a p {color: $white !important;}
 }
