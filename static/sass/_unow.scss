@@ -208,8 +208,12 @@ $register-banner-image: none;
   .chapter {
     background-image: none !important;
     h3.ui-accordion-header a {color: $white !important;}
-    h3.ui-accordion-header:hover a{color: $dark-green !important;}
+    &::hover h3.ui-accordion-header a{color: $dark-green !important;}
   }
   .chapter.is-open h3.ui-accordion-header a{color: $black !important;}
   ul.ui-accordion-content li.active>a p {color: $white !important;}
+}
+
+.find-courses .search .logo{
+  display: none;
 }
