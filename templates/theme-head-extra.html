@@ -3,8 +3,12 @@
 <%namespace name='static' file='/static_content.html'/>
 
 <!--[if IE 9]>
-% for x in range(1, 6):
-  <% url = "themes/arval/css/ie9_main_" + str(x) + ".css" %>
-  <link rel="stylesheet" href="${static.url(url)}" />
+% for m in range(1, 6):
+  <% main_css_url = "themes/arval/css/ie9_main_" + str(m) + ".css" %>
+  <link rel="stylesheet" href="${static.url(main_css_url)}" />
+% endfor
+% for c in range(1, 6):
+  <% course_css_url = "themes/arval/css/ie9_course_" + str(c) + ".css" %>
+  <link rel="stylesheet" href="${static.url(course_css_url)}" />
 % endfor
 <![endif]-->
