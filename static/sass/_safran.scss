@@ -18,12 +18,12 @@ $bg-color: #85cfe8; //Selected Content BG Color, ie. calendar
 //Main BG Color Variables
 $main-bg: #76263c;
 $main-bg-60: lighten($main-bg, 18.5%); //Main Border/HR Color
-$main-bg-25: lighten($main-bg, 25%); 
+$main-bg-25: lighten($main-bg, 25%);
 
 //Secondary Color Variables
 $secondary: #d2ffff;
 $secondary-50: lighten($secondary, 9%);
-$secondary-25: lighten($secondary, 20%); //Important Heading BG Color 
+$secondary-25: lighten($secondary, 20%); //Important Heading BG Color
 
 //Gray Color Variables
 $gray: #3f3f3f; //Main Text Color
@@ -189,19 +189,22 @@ $footer_margin: ($baseline/4) 0;
 $homepage-bg-image: url('../themes/safran/images/bandeauhome.jpg');
 
 $login-banner-image: none;
-$register-banner-image: none;
+$register-banner-image: url("../themes/safran/images/inscription.jpg");
 
 $video-thumb-url: '../themes/safran/images/edx.png';
 
 //-----------------
 //  Mixin Styles
 //-----------------
+
 @mixin login_register_h1_style {
-    background: transparent url("../themes/safran/images/inscription.jpg") 200px 0 no-repeat;
+    background: rgba(255,255,255,0.7);
     clip: auto !important;
     height: 50px;
-    width: 900px;
+    width: 100%;
     top: 0;
+    left: 0 !important;
+    padding-left: 30px;
 }
 
 @mixin footer_references_style {
@@ -239,7 +242,7 @@ header.global {
 .wrapper-footer {
     box-shadow: none !important;
     border-top: 2px solid $main-color !important;
-    
+
     footer {
         max-width: 1180px;
         margin: 0 auto;
